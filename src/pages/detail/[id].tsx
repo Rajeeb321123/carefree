@@ -34,6 +34,7 @@ const Detail = ({ postDetails }: Iprops) => {
   const [isVideoMuted, setIsVideoMuted] = useState(false);
   const [comment, setComment] = useState('');
   const [isPostingComment,setIsPostingComment] =useState(false);
+  const router = useRouter();
 
   
 
@@ -48,16 +49,8 @@ const Detail = ({ postDetails }: Iprops) => {
     
   }
 
-  if (!post) return null;
-  useEffect(() => {
-    
-    if (post && videoRef?.current) {
-      // isVideomuted is boolean value
-      videoRef.current.muted = isVideoMuted
-    }
-
-    // below[] is for dependencies and it is used whenever they are altered
-  }, [post, isVideoMuted]);
+  
+ 
 
 
 
@@ -90,10 +83,18 @@ const Detail = ({ postDetails }: Iprops) => {
       
     }
   }
+  useEffect(() => {
+    
+    if (post && videoRef?.current) {
+      // isVideomuted is boolean value
+      videoRef.current.muted = isVideoMuted
+    }
+
+    // below[] is for dependencies and it is used whenever they are altered
+  }, [post, isVideoMuted]);
 
 
-
-  const router = useRouter();
+ 
 
 
   return (
@@ -152,7 +153,7 @@ const Detail = ({ postDetails }: Iprops) => {
       <div className="relative w-[1000px]  md:w-[1000px] lg:w-full xl:w-[440px]">
         <div className='lg:mt-20 mt-10'>
 
-          <Link href={`/`}>
+          <Link href={`/profile/${post.postedBy._id}`}>
             <div className='flex gap-4 mb-4 bg-white w-full pl-10 cursor-pointer'>
               <Image
                 width={60}

@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Sidebar/>
         </div>
         <div className='mt-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1'>
-          <Component {...pageProps} />'
+          <Component {...pageProps} />
         </div>
       </div>
 
