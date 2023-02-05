@@ -48,7 +48,7 @@ const Comment = ({ comment, setComment, addComment, comments, isPostingComment }
 
   
     
-  }, [fetchAllUsers,allUsers],)
+  }, [fetchAllUsers,allUsers,userProfile],)
  
 
   return (
