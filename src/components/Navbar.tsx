@@ -63,7 +63,7 @@ const Navbar = () => {
 
 
       <div className='relative hidden md:block'>
-        <form onSubmit={handleSearch} className="absolute md:static top-10 left-20 bg-white">
+        <form onSubmit={handleSearch} className="absolute md:static top-10 left-20 bg-white ">
           <input
             type="text" value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}

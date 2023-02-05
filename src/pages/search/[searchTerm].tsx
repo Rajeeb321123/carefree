@@ -23,7 +23,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
     const accounts = isAccounts ? 'border-b-2 border-black' : 'text-gray-400';
     const isVideos = !isAccounts ? 'border-b-2 border-black' : 'text-gray-400';
     // toLowercase() insure no matter the upper and lower case and includes insure any accounts which included the terms
-    const searchedAccounts = allUsers?.filter((user: IUser) => user.userName.toLowerCase().includes(searchTerm));
+    const searchedAccounts = allUsers?.filter((user: IUser) => user.userName.toLowerCase().includes(searchTerm.toLowerCase()));
     
     return (
       <div className='w-full  '>

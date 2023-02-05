@@ -12,9 +12,9 @@ const Discover = () => {
 
 
     const activeTopicStyle ='xl:border-2 hover:bg-primary xl:border-[#F51997] px-3 py-2  xl:rounded-full flex items-center gap-2 justify-center cursor-pointer text-[#F51997]'
-    const topicStyle='xl:border-2 hover:bg-primary xl:border-gray-300 px-3 py-2  xl:rounded-none flex items-center gap-2 justify-center cursor-pointer text-black'
+    const topicStyle='  bg-[#F8B195] xl:border-2 hover:bg-primary xl:border-gray-300 px-3 py-2  xl:rounded-none flex items-center gap-2 justify-center cursor-pointer text-[#F51997]'
   return (
-    <div className='xl:border-b-2 xl:border-gray-200 pb-6'>
+    <div className='xl:border-b-2  border-gray-200 pb-6 '>
         <p className='text-gray-500 font-semibold m-3  mt-4 hidden xl:block'>
             Popular Topics
 

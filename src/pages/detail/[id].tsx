@@ -106,7 +106,7 @@ const Detail = ({ postDetails }: Iprops) => {
           <p >
             {/* imp:how to use of router.back() */}
             {/*router.back will just get back to previous url   */}
-            <MdOutlineCancel className='  h-4 hover:h-5 text-white lg:opacity-10 text-[35px] hover:opacity-90 cursor-pointer' onClick={() => router.back()} />
+            <MdOutlineCancel className='  h-6 hover:h-7 text-white lg:opacity-50 text-[35px] hover:opacity-100 cursor-pointer' onClick={() => router.back()} />
           </p>
 
         </div>
