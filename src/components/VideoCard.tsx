@@ -103,6 +103,7 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
             onMouseLeave={() => { setIsHover(false) }}
             className='roundedj-3xl'>
             <Link href={`/detail/${post._id}`}>
+            <p className='text-sm relative top-1 text-center'>Click on video to go to video details page </p>
               <video
 
                 loop
@@ -114,7 +115,7 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
 
             {isHover && (
               <div className='absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-5  w-[100px] md:w-[50px] lg:w-[600px] p-3'>
-               
+                
                 {/* these are the buttons for video */}
                 {/* use useRef for changing state of video by button */}
                 {playing ? (
