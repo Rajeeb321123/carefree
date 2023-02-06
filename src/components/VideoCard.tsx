@@ -103,7 +103,7 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
             onMouseLeave={() => { setIsHover(false) }}
             className='roundedj-3xl'>
             <Link href={`/detail/${post._id}`}>
-            <p className='text-sm relative top-1 text-center'>Click on video to go to video details page </p>
+            
               <video
 
                 loop
@@ -141,7 +141,10 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
                       className='text-[#9db831] text-2xl lg:text-4xl' />
                   </button>
                 }
-
+                <div className=' relative w-full'>
+                <p className='text-sm top-1 text-center'>Click on video to go to video details page </p>
+                </div>
+                
               </div>
             )}
           </div>
