@@ -114,7 +114,7 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
 
             {isHover && (
               <div className='absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-5  w-[100px] md:w-[50px] lg:w-[600px] p-3'>
-                <p className='text-2xl relative top-1 text-center'>Click on video to go to video details page </p>
+               
                 {/* these are the buttons for video */}
                 {/* use useRef for changing state of video by button */}
                 {playing ? (
