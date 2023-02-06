@@ -141,7 +141,9 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
                       className='text-[#9db831] text-2xl lg:text-4xl' />
                   </button>
                 }
-                
+                <div className=' relative w-full'>
+                <p className='text-sm top-1 opacity-30 text-center'>Click on video to go to video details page </p>
+                </div>
                 
               </div>
             )}
