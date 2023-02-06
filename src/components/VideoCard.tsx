@@ -125,6 +125,7 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
               <div className='text-sm top-1  text-center'>details page </div>
               </div>)}
               </Link>
+              
 
               <div className='absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-5  w-[100px] md:w-[50px] lg:w-[600px] p-3'>
                 
