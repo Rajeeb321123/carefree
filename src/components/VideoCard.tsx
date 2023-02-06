@@ -8,6 +8,7 @@ import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi'
 import { BsPlay, BsFillPlayFill, BsFillPauseFill } from "react-icons/bs"
 import { GoVerified } from 'react-icons/go'
 import postedBy from 'sanity-backend/schemas/postedBy';
+import { MdNextPlan } from 'react-icons/md';
 
 const css = { width: '100%', height: 'auto' }
 interface Iprops {
@@ -50,12 +51,15 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
 
 
   return (
+    
     <div className='flex flex-col border-b-2 border-gray-200 pb-6'>
       <div>
+      
 
 
         <div className='flex gap-3 p-2 cursor-pointer font-semibold rounded'>
           <div className='"md:w-16 md:h-16 w-10 h-10'>
+          
             <Link href={`/profile/${post.postedBy._id}`}>
               {/* we cant directly put image inside Link , so make a fragment */}
               <>
@@ -114,6 +118,13 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
             </Link>
 
             {isHover && (
+              <>
+               <Link href={`/detail/${post._id}`}>
+              {isHover && (<div className='  absolute w-full top-0 opacity-40 flex left-2 hover:cursor-pointer'>
+              <MdNextPlan/>
+              <div className='text-sm top-1  text-center'>details page </div>
+              </div>)}
+              </Link>
               <div className='absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-5  w-[100px] md:w-[50px] lg:w-[600px] p-3'>
                 
                 {/* these are the buttons for video */}
@@ -141,12 +152,13 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
                       className='text-[#9db831] text-2xl lg:text-4xl' />
                   </button>
                 }
-                <div className=' relative w-full'>
-                <p className='text-sm top-1 opacity-30 text-center'>Click on video to go to video details page </p>
-                </div>
+                
                 
               </div>
+              </>
             )}
+
+           
           </div>
         </div>
 
@@ -154,6 +166,8 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
 
 
     </div>
+   
+    
   )
 }
 

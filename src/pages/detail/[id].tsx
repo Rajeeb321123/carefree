@@ -150,7 +150,7 @@ const Detail = ({ postDetails }: Iprops) => {
         </div>
       </div>
 
-      <div className="relative w-[1000px]  md:w-[1000px] lg:w-full xl:w-[440px]">
+      <div className="relative w-full  md:w-[1000px] lg:w-full xl:w-[440px]">
         <div className='lg:mt-20 mt-10'>
 
           <Link href={`/profile/${post.postedBy._id}`}>
