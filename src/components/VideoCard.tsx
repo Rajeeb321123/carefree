@@ -120,12 +120,12 @@ const VideoCard: NextPage<Iprops> = ({ post }) => {
             {isHover && (
               <>
                <Link href={`/detail/${post._id}`}>
-              {isHover && (<div className='  absolute w-full top-0 opacity-40 flex left-2 hover:cursor-pointer'>
+              {isHover && (<div className='  absolute w-full top-4 opacity-40 flex left-2 hover:cursor-pointer'>
               <MdNextPlan/>
               <div className='text-sm top-1  text-center'>details page </div>
               </div>)}
               </Link>
-              
+
               <div className='absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-5  w-[100px] md:w-[50px] lg:w-[600px] p-3'>
                 
                 {/* these are the buttons for video */}
